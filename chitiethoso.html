@@ -1,0 +1,202 @@
+<html>
+ <head>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #f8f3ff;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background-image: url('../assets/images/background.png');
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            max-width: 100px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #5a2d82;
+        }
+        .header h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #5a2d82;
+        }
+        .content {
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .profile-card .info {
+            font-size: 16px;
+        }
+        .profile-card .info p {
+            margin: 0;
+        }
+        .details {
+            margin-top: 20px;
+        }
+        .details h2 {
+            font-size: 24px;
+            color: #6c63ff;
+            margin-bottom: 20px;
+        }
+        .details .section {
+            background-color: #e6e1ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .details .section h3 {
+            font-size: 18px;
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
+        .details .section p {
+            margin: 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+  </style>
+ </head>
+ <body>
+    <div class="header">
+        <a href="../index.html">
+            <img alt="Saigon Healthcare Logo" src="../assets/images/logo.png" />
+          </a>
+        <div>
+         <h1>
+          SAIGON HEALTHCARE
+         </h1>
+         <h2>
+          Quản lý hồ sơ
+         </h2>
+        </div>
+        <i class="fas fa-user-circle fa-3x" style="color: #5a2d82;">
+        </i>
+       </div>
+  <div class="content">
+   <div class="profile-card">
+    <img alt="Profile Picture" src="../assets/images/hoso.png"/>
+    <div class="info">
+     <p>
+      Họ và tên: Nguyễn Quang Huy
+     </p>
+     <p>
+      Ngày sinh: 16/08/2001
+     </p>
+     <p>
+      Địa chỉ: 15 Võ Văn Kiệt, Phường 16, Quận 8, TP.Hồ Chí Minh
+     </p>
+     <p>
+      SĐT: 0123456789
+     </p>
+     <p>
+      Giới tính: Nam
+     </p>
+     <p>
+      Chiều cao: 173 cm
+     </p>
+     <p>
+      Cân nặng: 65 kg
+     </p>
+    </div>
+   </div>
+   <div class="details">
+    <h2>
+     Chi tiết hồ sơ
+    </h2>
+    <div class="section">
+     <h3>
+      Tiền sử bệnh án gia đình
+     </h3>
+     <p>
+      Không có
+     </p>
+    </div>
+    <div class="section">
+     <h3>
+      Tiền sử bệnh án cá nhân
+     </h3>
+     <p>
+      <strong>
+       Bệnh lý trước đây:
+      </strong>
+     </p>
+     <ul>
+      <li>
+       Bệnh hen suyễn (mắc từ năm 2021, điều trị bằng thuốc hít).
+      </li>
+      <li>
+       Đau dạ dày (được chẩn đoán năm 2023, điều trị bằng thuốc ức chế acid).
+      </li>
+      <li>
+       Không có tiền sử phẫu thuật.
+      </li>
+     </ul>
+     <p>
+      <strong>
+       Bệnh lý mãn tính:
+      </strong>
+     </p>
+     <ul>
+      <li>
+       Tăng huyết áp (chẩn đoán năm 2024, hiện đang dùng thuốc điều trị).
+      </li>
+     </ul>
+    </div>
+    <div class="section">
+     <h3>
+      Thuốc đang sử dụng
+     </h3>
+     <p>
+      Amlodipine 5mg (1 lần/ngày cho tăng huyết áp).
+     </p>
+    </div>
+    <div class="section">
+     <h3>
+      Lời khuyên từ bác sĩ
+     </h3>
+     <p>
+      Chế độ ăn uống cân bằng, giàu rau xanh, trái cây, ngũ cốc nguyên hạt và protein nạc.
+     </p>
+     <p>
+      Uống đủ nước và hạn chế đồ uống có đường, có ga.
+     </p>
+    </div>
+   </div>
+   <div class="buttons">
+    <button class="btn btn-info">
+     Cập nhật
+    </button>
+    <button class="btn btn-danger">
+     Xóa hồ sơ
+    </button>
+   </div>
+  </div>
+ </body>
+</html>

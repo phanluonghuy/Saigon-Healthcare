@@ -1,0 +1,290 @@
+<html>
+  <head>
+    <title>Saigon Healthcare Appointment</title>
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f3ff;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-image: url("../assets/images/background.png");
+        background-size: cover;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header img {
+        max-width: 100px;
+      }
+      .header h1 {
+        font-size: 2rem;
+        margin: 0;
+        color: #5a2d82;
+      }
+      .header h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #5a2d82;
+      }
+      .container {
+        margin-top: 30px;
+      }
+      .calendar,
+      .doctors,
+      .time-slots,
+      .info-form {
+        margin-top: 15px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .calendar {
+        text-align: center;
+      }
+      .calendar h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .calendar table {
+        width: 100%;
+      }
+      .calendar th,
+      .calendar td {
+        padding: 10px;
+        text-align: center;
+      }
+      .calendar th {
+        color: red;
+      }
+      .calendar td {
+        cursor: pointer;
+      }
+      .calendar .selected {
+        background-color: #5a2d82;
+        color: white;
+        border-radius: 50%;
+      }
+      .doctors img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+      .doctors .doctor {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .doctors .doctor h3 {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      .doctors .doctor p {
+        font-size: 14px;
+        color: gray;
+      }
+      .time-slots {
+        text-align: center;
+      }
+      .time-slots h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .time-slots .slot {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .time-slots .selected {
+        background-color: #5a2d82;
+        color: white;
+      }
+      .info-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .btn-book {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 10%;
+        background-color: #5a2d82;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="../index.html">
+        <img alt="Saigon Healthcare Logo" src="../assets/images/logo.png" />
+      </a>
+      <div>
+        <h1>SAIGON HEALTHCARE</h1>
+        <h2>Quản lý lịch hẹn</h2>
+      </div>
+      <i class="fas fa-user-circle fa-3x" style="color: #5a2d82"> </i>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="calendar">
+            <h2>Đặt lịch</h2>
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <i class="fas fa-calendar-alt"> </i>
+              <input
+                class="form-control mx-2"
+                readonly=""
+                type="text"
+                value="01/10/2024"
+              />
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>CN</th>
+                  <th>T2</th>
+                  <th>T3</th>
+                  <th>T4</th>
+                  <th>T5</th>
+                  <th>T6</th>
+                  <th>T7</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-danger">2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">30</td>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="doctors">
+            <div class="doctor">
+              <img alt="Doctor NQ Huy" src="../assets/images/doctor1.png" />
+              <h3>Bs. NQ. Huy</h3>
+              <p>Tai mũi họng</p>
+              <p>⭐ 4.5 (135 reviews)</p>
+            </div>
+            <div class="doctor">
+              <img alt="Doctor Mensah T" src="../assets/images/doctor2.png" />
+              <h3>Bs. Mensah T</h3>
+              <p>Khoa nội soi</p>
+              <p>⭐ 4.3 (130 reviews)</p>
+            </div>
+            <div class="doctor">
+              <img alt="Doctor Klimisch J" src="../assets/images/doctor3.png" />
+              <h3>Bs. Klimisch J</h3>
+              <p>Chấn thương chỉnh hình</p>
+              <p>⭐ 4.5 (135 reviews)</p>
+            </div>
+            <div class="doctor">
+              <img alt="Doctor PV Thái" src="../assets/images/doctor4.png" />
+              <h3>Bs. PV. Thái</h3>
+              <p>Khoa nhi</p>
+              <p>⭐ 4.3 (130 reviews)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="time-slots">
+            <h2>Available Time</h2>
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <input
+                class="form-control mx-2"
+                readonly=""
+                type="text"
+                value="01/10/2024"
+              />
+            </div>
+            <div class="slot">09:00 AM</div>
+            <div class="slot">09:30 AM</div>
+            <div class="slot">10:00 AM</div>
+            <div class="slot">10:30 AM</div>
+            <div class="slot">12:00 PM</div>
+            <div class="slot selected">12:30 PM</div>
+            <div class="slot">01:00 PM</div>
+            <div class="slot">01:30 PM</div>
+            <div class="slot">02:00 AM</div>
+            <div class="slot">03:00 PM</div>
+            <div class="slot">04:30 PM</div>
+            <div class="slot">05:00 PM</div>
+            <div class="slot">05:30 AM</div>
+          </div>
+          <div class="info-form">
+            <h2>Nhập thông tin</h2>
+            <input placeholder="Họ và Tên" type="text" />
+            <input placeholder="Số điện thoại" type="text" />
+            <input placeholder="Tuổi" type="text" />
+            <input placeholder="Ghi chú" type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn-book">Đặt lịch</button>
+      </div>
+    </div>
+  </body>
+</html>
