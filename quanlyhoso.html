@@ -1,203 +1,176 @@
 <html>
- <head>
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
-            background-color: #f3edf7;
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background-image: url('../assets/images/background.png');
-            background-size: cover;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header img {
-            max-width: 100px;
-        }
-        .header h1 {
-            font-size: 2rem;
-            margin: 0;
-            color: #5a2d82;
-        }
-        .header h2 {
-            font-size: 1.5rem;
-            margin: 0;
-            color: #5a2d82;
-        }
-        .search-bar {
-            margin: 20px 0;
-            text-align: right;
-        }
-        .search-bar input {
-            width: 300px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .search-bar button {
-            background-color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .table-container {
-            margin: 20px;
-        }
-        .table th, .table td {
-            text-align: left;
-            padding: 10px;
-        }
-        .table th {
-            background-color: #e0e0e0;
-        }
-        .add-record {
-            text-align: center;
-            margin: 20px;
-        }
-        .add-record button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #5a2d82;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-  </style>
- </head>
- <body>
+  <head>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/fa.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #f3edf7;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-image: url("../assets/images/background.png");
+        background-size: cover;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header img {
+        max-width: 100px;
+      }
+      .header h1 {
+        font-size: 2rem;
+        margin: 0;
+        color: #5a2d82;
+      }
+      .header h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #5a2d82;
+      }
+      .search-bar {
+        margin: 20px 0;
+        text-align: right;
+      }
+      .search-bar input {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .search-bar button {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .table-container {
+        margin: 20px;
+      }
+      .table th,
+      .table td {
+        text-align: left;
+        padding: 10px;
+      }
+      .table th {
+        background-color: #e0e0e0;
+      }
+      .add-record {
+        text-align: center;
+        margin: 20px;
+      }
+      .add-record button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #5a2d82;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
     <div class="header">
-        <a href="../index.html">
-            <img alt="Saigon Healthcare Logo" src="../assets/images/logo.png" />
-          </a>
-        <div>
-         <h1>
-          SAIGON HEALTHCARE
-         </h1>
-         <h2>
-          Quản lý hồ sơ
-         </h2>
-        </div>
-        <i class="fas fa-user-circle fa-3x" style="color: #5a2d82;">
-        </i>
-       </div>
-  <div class="container">
-   <div class="search-bar">
-    <input placeholder="Nhập họ tên hoặc SDT để tra cứu" type="text"/>
-    <button>
-     <i class="fas fa-search">
-     </i>
-    </button>
-   </div>
-   <div class="table-container">
-    <h2>
-     Danh sách hồ sơ
-    </h2>
-    <table class="table table-bordered">
-     <thead>
-      <tr>
-       <th>
-        Họ và Tên
-       </th>
-       <th>
-        Ngày sinh
-       </th>
-       <th>
-        Số điện thoại
-       </th>
-       <th>
-        Địa chỉ
-       </th>
-       <th>
-        Hành động
-       </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
-        Nguyễn Quang Huy
-       </td>
-       <td>
-        16/08/2001
-       </td>
-       <td>
-        0123456789
-       </td>
-       <td>
-        Hồ Chí Minh
-       </td>
-       <td>
-        <button onclick="location.href='../chitiethoso.html'" class="btn btn-dark">
-         Xem chi tiết
+      <a href="../index.html">
+        <img alt="Saigon Healthcare Logo" src="../assets/images/logo.png" />
+      </a>
+      <div>
+        <h1>SAIGON HEALTHCARE</h1>
+        <h2>Quản lý hồ sơ</h2>
+      </div>
+      <i class="fas fa-user-circle fa-3x" style="color: #5a2d82"> </i>
+    </div>
+    <div class="container">
+      <div class="search-bar">
+        <input placeholder="Nhập họ tên hoặc SDT để tra cứu" type="text" />
+        <button>
+          <i class="fas fa-search"> </i>
         </button>
-      </tr>
-      <tr>
-       <td>
-        Nguyễn Văn B
-       </td>
-       <td>
-        07/09/2001
-       </td>
-       <td>
-        0123456789
-       </td>
-       <td>
-        Bình Dương
-       </td>
-       <td>
-        <button onclick="location.href='../chitiethoso.html'" class="btn btn-dark">
-         Xem chi tiết
+      </div>
+      <div class="table-container">
+        <h2>Danh sách hồ sơ</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Họ và Tên</th>
+              <th>Ngày sinh</th>
+              <th>Số điện thoại</th>
+              <th>Địa chỉ</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nguyễn Quang Huy</td>
+              <td>16/08/2001</td>
+              <td>0123456789</td>
+              <td>Hồ Chí Minh</td>
+              <td>
+                <button
+                  onclick="location.href='../chitiethoso.html'"
+                  class="btn btn-dark"
+                >
+                  Xem chi tiết
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Nguyễn Văn B</td>
+              <td>07/09/2001</td>
+              <td>0123456789</td>
+              <td>Bình Dương</td>
+              <td>
+                <button
+                  onclick="location.href='../chitiethoso.html'"
+                  class="btn btn-dark"
+                >
+                  Xem chi tiết
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Lê Thị Nam</td>
+              <td>02/08/2000</td>
+              <td>0123456789</td>
+              <td>Bến Tre</td>
+              <td>
+                <button
+                  onclick="location.href='../chitiethoso.html'"
+                  class="btn btn-dark"
+                >
+                  Xem chi tiết
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Lê Văn C</td>
+              <td>12/05/1994</td>
+              <td>0123456789</td>
+              <td>Hồ Chí Minh</td>
+              <td>
+                <button
+                  onclick="location.href='../chitiethoso.html'"
+                  class="btn btn-dark"
+                >
+                  Xem chi tiết
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="add-record">
+        <button
+          onclick="location.href='../themhoso.html'"
+          class="btn btn-success"
+        >
+          Thêm hồ sơ
         </button>
-      </tr>
-      <tr>
-       <td>
-        Lê Thị Nam
-       </td>
-       <td>
-        02/08/2000
-       </td>
-       <td>
-        0123456789
-       </td>
-       <td>
-        Bến Tre
-       </td>
-       <td>
-        <button onclick="location.href='../chitiethoso.html'" class="btn btn-dark">
-         Xem chi tiết
-        </button>
-      </tr>
-      <tr>
-       <td>
-        Lê Văn C
-       </td>
-       <td>
-        12/05/1994
-       </td>
-       <td>
-        0123456789
-       </td>
-       <td>
-        Hồ Chí Minh
-       </td>
-       <td>
-        <button onclick="location.href='../chitiethoso.html'" class="btn btn-dark">
-         Xem chi tiết
-        </button>
-      </tr>
-     </tbody>
-    </table>
-   </div>
-   <div class="add-record">
-    <button onclick="location.href='../themhoso.html'" class="btn btn-success">
-     Thêm hồ sơ
-    </button>
-   </div>
-  </div>
- </body>
+      </div>
+    </div>
+  </body>
 </html>

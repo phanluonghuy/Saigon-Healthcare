@@ -1,116 +1,149 @@
 <html>
- <head>
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
-            background-color: #f8e9ff;
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background-image: url('../assets/images/background.png');
-            background-size: cover;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header img {
-            max-width: 100px;
-        }
-        .header h1 {
-            font-size: 2rem;
-            margin: 0;
-            color: #5a2d82;
-        }
-        .header h2 {
-            font-size: 1.5rem;
-            margin: 0;
-            color: #5a2d82;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
-            text-align: center;
-            color: #4a148c;
-            margin-bottom: 20px;
-        }
-        .form-control {
-            background-color: #fff;
-            border: none;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 16px;
-        }
-        .btn-success {
-            background-color: #4a148c;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-size: 16px;
-            display: block;
-            margin: 20px auto;
-        }
-        .back-icon {
-            font-size: 24px;
-            color: #4a148c;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        .profile-icon {
-            font-size: 36px;
-            color: #4a148c;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .back-button {
+  <head>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/fa.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #f8e9ff;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        background-image: url("../assets/images/background.png");
+        background-size: cover;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header img {
+        max-width: 100px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        margin: 0;
+        color: #5a2d82;
+      }
+
+      .header h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #5a2d82;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .content h2 {
+        text-align: center;
+        color: #4a148c;
+        margin-bottom: 20px;
+      }
+
+      .form-control {
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .btn-success {
+        background-color: #4a148c;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto;
+      }
+
+      .back-icon {
+        font-size: 24px;
+        color: #4a148c;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      .profile-icon {
+        font-size: 36px;
+        color: #4a148c;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .back-button {
         font-size: 24px;
         color: #6a0dad;
         position: absolute;
         top: 120px;
         left: 20px;
       }
-  </style>
- </head>
- <body>
+    </style>
+  </head>
+
+  <body>
     <div class="header">
-        <a href="../index.html">
-            <img alt="Saigon Healthcare Logo" src="../assets/images/logo.png" />
-          </a>
-        <div>
-         <h1>
-          SAIGON HEALTHCARE
-         </h1>
-         <h2>
-          Quản lý đánh giá
-         </h2>
-        </div>
-        <i class="fas fa-user-circle fa-3x" style="color: #5a2d82;">
-        </i>
-       </div>
-       <a class="back-button" href="../quanlydanhgia.html">
-        <i class="fas fa-arrow-left"> </i>
+      <a href="../index.html">
+        <img alt="Saigon Healthcare Logo" src="../assets/images/logo.png" />
       </a>
-  <div class="content">
-   <h2>
-    Chi tiết đánh giá
-   </h2>
-   <input class="form-control" readonly="" type="text" value="Tài khoản : Nguyễn Quang Huy"/>
-   <input class="form-control" readonly="" type="text" value="Số điện thoại : 0123456789"/>
-   <input class="form-control" readonly="" type="text" value="Địa chỉ : 15 Võ Văn Kiệt, Phường 16, Quận 8, TP.Hồ Chí Minh"/>
-   <input class="form-control" readonly="" type="text" value="Thời gian : 16/09/2024"/>
-   <input class="form-control" readonly="" type="text" value="Số sao : 4"/>
-   <input class="form-control" readonly="" type="text" value="Trạng thái : Chưa xử lý"/>
-   <input class="form-control" readonly="" type="text" value="Nội dung : Chất lượng dịch vụ tốt,tuy nhiên giá hơi cao so với mặt bằng chung"/>
-   <button class="btn btn-success">
-    Đánh dấu đã xử lý
-   </button>
-  </div>
- </body>
+      <div>
+        <h1>SAIGON HEALTHCARE</h1>
+        <h2>Quản lý đánh giá</h2>
+      </div>
+      <i class="fas fa-user-circle fa-3x" style="color: #5a2d82"> </i>
+    </div>
+    <a class="back-button" href="../quanlydanhgia.html">
+      <i class="fas fa-arrow-left"> </i>
+    </a>
+    <div class="content">
+      <h2>Chi tiết đánh giá</h2>
+      <input
+        class="form-control"
+        readonly=""
+        type="text"
+        value="Tài khoản : Nguyễn Quang Huy"
+      />
+      <input
+        class="form-control"
+        readonly=""
+        type="text"
+        value="Số điện thoại : 0123456789"
+      />
+      <input
+        class="form-control"
+        readonly=""
+        type="text"
+        value="Địa chỉ : 15 Võ Văn Kiệt, Phường 16, Quận 8, TP.Hồ Chí Minh"
+      />
+      <input
+        class="form-control"
+        readonly=""
+        type="text"
+        value="Thời gian : 16/09/2024"
+      />
+      <input class="form-control" readonly="" type="text" value="Số sao : 4" />
+      <input
+        class="form-control"
+        readonly=""
+        type="text"
+        value="Trạng thái : Chưa xử lý"
+      />
+      <input
+        class="form-control"
+        readonly=""
+        type="text"
+        value="Nội dung : Chất lượng dịch vụ tốt,tuy nhiên giá hơi cao so với mặt bằng chung"
+      />
+      <button class="btn btn-success">Đánh dấu đã xử lý</button>
+    </div>
+  </body>
 </html>
